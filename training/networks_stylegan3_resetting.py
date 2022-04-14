@@ -492,6 +492,8 @@ class SynthesisNetwork(torch.nn.Module):
         self.first_cutoff = first_cutoff
         self.channel_max = channel_max
         self.num_layers = num_layers
+        print("Test")
+        print(layer_kwargs)
         self.conv_kernel = layer_kwargs['conv_kernel']
         self.use_radial_filters = layer_kwargs['use_radial_filters']
 
